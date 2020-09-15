@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" href="css/style.css"/-->
+    <script src="js/ConverterBMI.js"></script>
+    <title>BMI Converter</title>
+  </head>
+  <body>
+      <h1>BMI Converter</h1>
+      <hr/>
+      <div>
+        Weight:
+        <select id="weightType" name="WeightType">
+          <option value="Kilograms">Kilograms (Kg)</option>
+          <option value="Pounds">Pounds (Lbs)</option>
+        </select>
+        <input type="number" min="0" id="weightValue" value="60"><br>
+        Height:
+        <select id="heightType" name="heightType">
+          <option value="centimeters">Centimeters (cm)</option>
+          <option value="meters">Meters (m)</option>
+          <option value="inches">Inches (in)</option>
+          <!--option value="feet">Feet (Ft)</option-->
+        </select>
+        <input type="number" min="0" id="heightValue" value="150"><br>
+        <button onclick="bmiConverter()">Go</button>
+      </div>
+      <p id='result'></p>
+      <p id='status'></p>
+  </body>
+</html>
